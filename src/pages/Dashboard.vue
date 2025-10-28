@@ -1,15 +1,9 @@
 <template>
-  <main class="max-w-[1440px] w-full px-6 py-16 mx-auto">
-    <div class="flex justify-between items-center mb-8">
+  <main class="max-w-[1440px] w-full px-4 py-16 mx-auto">
+    <div class="flex justify-between items-center mb-12">
       <h2>
         Welcome Back, {{ session?.user?.email?.split('@')[0] || 'User' }} 👋
       </h2>
-      <button
-        @click="logout"
-        class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition"
-      >
-        Logout
-      </button>
     </div>
 
     <p class="text-gray-600 mb-12 text-center">

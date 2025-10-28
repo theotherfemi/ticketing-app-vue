@@ -1,6 +1,6 @@
 <template>
   <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="w-full mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="max-w-[1440px] w-full mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Logo -->
       <RouterLink to="/" class="text-2xl font-bold text-blue-600">
         TicketPro

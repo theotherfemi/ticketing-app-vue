@@ -16,6 +16,7 @@ import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 </script>
 
+<!--
 <style>
 .app-container {
   max-width: 1440px;
@@ -23,3 +24,4 @@ import Footer from './components/Footer.vue'
   padding: 0 1rem;
 }
 </style>
+-->

@@ -1,7 +1,6 @@
 <template>
-  <div class="p-6">
-    <div class="flex justify-between items-center mb-6">
-      <h1 class="text-3xl font-bold text-gray-800">Tickets</h1>
+  <div class="max-w-[1440px] w-full px-4 py-16 mx-auto">
+    <div class="flex justify-end items-center mb-6">
       <button
         @click="openCreateModal"
         class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
@@ -21,7 +20,7 @@
       />
     </div>
 
-    <p v-else class="text-gray-500 text-center mt-10">
+    <p v-else class="text-gray-500 text-xl text-center mt-12">
       No tickets yet. Create one to get started!
     </p>
 
@@ -100,3 +99,13 @@ const confirmDelete = (ticket) => {
   ticketToDelete.value = null
 }
 </script>
+
+
+
+
+https://www.browserstack.com/test-management/features/test-run-management/what-is-test-plan
+https://www.browserstack.com/guide/non-functional-requirements-examples
+https://rahulshettyacademy.com/blog/index.php/2021/07/07/learn-about-test-cases-in-software-testing/#t-1625679759121
+
+https://www.youtube.com/watch?v=h9r4b6qguyA&t=2532s
+https://www.youtube.com/watch?v=haETnsiNI6Y
