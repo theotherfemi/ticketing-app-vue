@@ -99,13 +99,3 @@ const confirmDelete = (ticket) => {
   ticketToDelete.value = null
 }
 </script>
-
-
-
-
-https://www.browserstack.com/test-management/features/test-run-management/what-is-test-plan
-https://www.browserstack.com/guide/non-functional-requirements-examples
-https://rahulshettyacademy.com/blog/index.php/2021/07/07/learn-about-test-cases-in-software-testing/#t-1625679759121
-
-https://www.youtube.com/watch?v=h9r4b6qguyA&t=2532s
-https://www.youtube.com/watch?v=haETnsiNI6Y
