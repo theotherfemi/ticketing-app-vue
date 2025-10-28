@@ -14,6 +14,6 @@ app.mount('#app')
 
 // Now you can safely check session.value
 if (!session.value) {
-  router.push('/login')
+  router.push('/auth/login')
 }
 
