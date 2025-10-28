@@ -14,7 +14,7 @@ export function useAuth() {
   const logout = () => {
     session.value = null
     localStorage.removeItem('session')
-    router.push('/login')
+    router.push('/')
   }
 
   const isAuthenticated = () => !!session.value
