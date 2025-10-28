@@ -92,6 +92,6 @@ const toggleMenu = () => (menuOpen.value = !menuOpen.value)
 const handleLogout = () => {
   logout()
   menuOpen.value = false
-  router.push('/auth/login')
+  router.push('/')
 }
 </script>
