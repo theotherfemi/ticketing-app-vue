@@ -69,7 +69,8 @@
         to="/tickets"
         class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
       >
-        Go to Ticket Management
+        <span class="hidden sm:inline">Go to Ticket Management</span>
+        <span class="sm:hidden">Manage Tickets</span>
       </router-link>
     </section>
   </main>
