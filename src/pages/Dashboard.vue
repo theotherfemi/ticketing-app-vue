@@ -1,8 +1,8 @@
 <template>
-  <main class="max-w-[1440px] w-full px-6 py-16">
+  <main class="max-w-[1440px] w-full px-6 py-16 mx-auto">
     <div class="flex justify-between items-center mb-8">
       <h2>
-        Welcome Back, {{ userName }} 👋
+        Welcome Back, {{ session?.user?.email?.split('@')[0] || 'User' }} 👋
       </h2>
       <button
         @click="logout"
@@ -46,16 +46,13 @@
       <div class="bg-white shadow-md rounded-xl p-6">
         <h3 class="text-xl font-semibold mb-4">System Insights</h3>
         <p class="text-gray-600 mb-2">
-          Resolution rate:
-          <span class="font-bold text-green-600">80%</span>
+          Resolution rate: <span class="font-bold text-green-600">80%</span>
         </p>
         <p class="text-gray-600 mb-2">
-          Avg response time:
-          <span class="font-bold text-blue-600">2h 45m</span>
+          Avg response time: <span class="font-bold text-blue-600">2h 45m</span>
         </p>
         <p class="text-gray-600">
-          Most common issue type:
-          <span class="font-bold">Login problems</span>
+          Most common issue type: <span class="font-bold">Login problems</span>
         </p>
       </div>
     </section>
@@ -68,15 +65,16 @@
       <p class="mb-6 text-gray-600">
         Quickly submit an issue and track it right from this dashboard.
       </p>
-      <RouterLink
+      <router-link
         to="/tickets"
-        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700"
       >
         Go to Ticket Management
-      </RouterLink>
+      </router-link>
     </section>
   </main>
 </template>
+
 
 <script setup>
 import { computed } from 'vue'

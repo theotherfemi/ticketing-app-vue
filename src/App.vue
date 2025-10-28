@@ -20,6 +20,6 @@ import Footer from './components/Footer.vue'
 .app-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 1rem; /* optional padding for breathing room */
+  padding: 0 1rem;
 }
 </style>

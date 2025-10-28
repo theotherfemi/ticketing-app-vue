@@ -1,17 +1,24 @@
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
 
-const session = ref(JSON.parse(localStorage.getItem('ticketapp_session')) || null)
+const session = ref(JSON.parse(localStorage.getItem('session')) || null)
 
 export function useAuth() {
-  const login = (data) => {
-    localStorage.setItem('ticketapp_session', JSON.stringify(data))
-    session.value = data // instantly update reactive session
+  const router = useRouter()
+
+  const login = (userData) => {
+    session.value = userData
+    localStorage.setItem('session', JSON.stringify(userData))
   }
 
   const logout = () => {
-    localStorage.removeItem('ticketapp_session')
     session.value = null
+    localStorage.removeItem('session')
+    router.push('/login')
   }
 
-  return { session, login, logout }
+  const isAuthenticated = () => !!session.value
+
+  return { session, login, logout, isAuthenticated }
 }
+
